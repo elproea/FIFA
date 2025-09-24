@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo institucional blanco con franjas negras */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom,
+    #ffffff 33.3%,  /* Blanco bandera */
+    #000000 33.3%,  /* Negro central */
+    #000000 66.6%,
+    #ffffff 66.6%   /* Blanco bandera */
+  );
+  color: #333;
+  padding: 20px;
+}
+
+/* Encabezado estilo federación */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-left: 10px solid #c0c0c0; /* Plateado */
+  border-right: 10px solid #c0c0c0;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Contenedor principal */
+.padre {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border-top: 6px solid #000000;
+}
+
+/* Tabla de jugadores */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+/* Encabezados */
+th {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Celdas */
+td {
+  padding: 15px;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+/* Biografía */
+td p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Imágenes de jugadores */
+img {
+  width: 110px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+  th, td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .padre {
+    padding: 20px;
+  }
+}
